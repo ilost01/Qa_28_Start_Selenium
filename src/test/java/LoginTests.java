@@ -1,40 +1,43 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-public  class LoginTests {
+
+public class LoginTests {
 
     @BeforeClass
     public void preCondition() {
-        //open браузер
-        //открыть сайт
-
+        //open browser
+        //open site
     }
+
     @Test
     public void loginSuccess() {
-        //открыть форму
-        //заполнить почту
-        //отправить пароль
-
+        //open form (find element + click)
+        //fill email (find element + click + clear + type)
+        //fill password (find element + click + clear + type)
+        //submit form (find element + click)
     }
 
+    @Test
+    public void loginWrongEmail() {
+        //open form (find element + click)
+        //fill email (find element + click + clear + type)
+        //fill password (find element + click + clear + type)
+        //submit form (find element + click)
+    }
+
+    @Test
+    public void loginWrongPassword() {
+        //open form (find element + click)
+        //fill email (find element + click + clear + type)
+        //fill password (find element + click + clear + type)
+        //submit form (find element + click)
+    }
+
+    @AfterClass
     public void postConditions() {
-
-        //закрыть браузер
+        //close browser
     }
 
-    public class LoginTests {
 
-        WebDriver wd;
-
-        @Test
-        public void test() {
-            wd = new ChromeDriver();
-            //wd.get("https://telranedu.web.app");
-            wd.navigate().to("https://telranedu.web.app");
-
-            //wd.close(); //закрывает только одну вкладку
-            wd.quit(); // все вкладки
-        }
-    }
 }
