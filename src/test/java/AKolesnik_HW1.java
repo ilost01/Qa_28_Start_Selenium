@@ -26,11 +26,11 @@ public class AKolesnik_HW1 {
         WebElement title = wd.findElement(By.cssSelector("h1"));
 
 
-        // HOME
+        // link HOME
         WebElement homeLink = wd.findElement(By.cssSelector("a[href='/home']"));
 
 
-        // ABOUT
+        // link ABOUT
         WebElement aboutLink = wd.findElement(By.cssSelector("a[href='/about']"));
 
 
